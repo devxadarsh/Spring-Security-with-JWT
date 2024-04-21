@@ -27,6 +27,6 @@ public class DataCleanupTask {
         LocalDateTime oneMinuteAgo = LocalDateTime.now().minusMinutes(1);
 
         verificationTokenRepository.deleteByExpiryDateBefore(oneMinuteAgo);
-        userRepository.deleteByExpiryDateBefore(oneMinuteAgo);
+//        userRepository.deleteByExpiryDateBefore(oneMinuteAgo);
     }
 }

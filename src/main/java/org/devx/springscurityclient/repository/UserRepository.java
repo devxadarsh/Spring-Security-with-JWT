@@ -11,5 +11,5 @@ import java.time.LocalDateTime;
 public interface UserRepository extends JpaRepository<User, Long> {
 
     User findByEmail(String email);
-    void deleteByExpiryDateBefore(LocalDateTime oneMinuteAgo);
+//    void deleteByExpiryDateBefore(LocalDateTime oneMinuteAgo);
 }
